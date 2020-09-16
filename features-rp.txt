@@ -1,0 +1,13 @@
+--[[
+Main:
+
+Auto Farm Shop
+]]--
+
+--[[
+Teleports:
+
+Teleport To Spawn
+Teleport Outside Of Spawn
+Teleport Inside Of Robine Spawn
+]]--
