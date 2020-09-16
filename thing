@@ -1,9 +1,0 @@
--- tp inside spawn
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(433, -14, 162)
-
--- tp outside to exit of spawn
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(193, -6, 162)
-
---[[
-will add more once wifi turns on
-]]--
