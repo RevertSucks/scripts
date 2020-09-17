@@ -1,0 +1,20 @@
+--[[
+Farms
+]]--
+  Auto Swing
+  Loop Sell
+  Buy Max Swords
+  Buy Max Swords Loop
+  Buy Max DNA (backpacks)
+  Buy Max DNA Loop
+
+--[[
+Teleports
+]]--
+  Shop TP
+  Skill TP
+  Boss TP
+--[[
+End
+]]--
+  Keep in mind this is a WIP or something lol
