@@ -15,6 +15,8 @@ Teleports
   Skill TP
   Boss TP
 --[[
-End
+Changelog
 ]]--
-  Keep in mind this is a WIP or something lol
+  Removed "End" tab from features
+  Add Buy Max Swords and DNA loop/one time buy
+  Updated Loop Sell
