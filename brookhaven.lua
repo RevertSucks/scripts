@@ -19,30 +19,30 @@ local Loop = UI.New({
 Page.TextField({
     Text = "Get on Back",
     Callback = function(value)
-        local string_1 = "BothWantPiggyBackRide";
-        local userdata_1 = game:GetService("Players")[value];
+        local string_11 = "BothWantPiggyBackRide";
+        local userdata_11 = game:GetService("Players")[value];
         local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
+        Target:FireServer(string_11, userdata_11);
     end
 })
 
 Page.TextField({
     Text = "Get in Arms",
     Callback = function(value)
-        local string_1 = "BothWantCarryHurt";
-        local userdata_1 = game:GetService("Players")[value];
+        local string_12 = "BothWantCarryHurt";
+        local userdata_12 = game:GetService("Players")[value];
         local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
+        Target:FireServer(string_12, userdata_12);
     end
 })
 
 Page.TextField({
     Text = "Get on Shoulders",
     Callback = function(value)
-        local string_1 = "BothWantShoulders";
-        local userdata_1 = game:GetService("Players")[value];
+        local string_13 = "BothWantShoulders";
+        local userdata_13 = game:GetService("Players")[value];
         local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
+        Target:FireServer(string_13, userdata_13);
         
     end
 })
@@ -58,10 +58,10 @@ Loop.TextField({
 
 while wait() do
     if getgenv().back == true then
-        local string_1 = "BothWantPiggyBackRide";
-        local userdata_1 = game:GetService("Players")[value];
+        local string_14 = "BothWantPiggyBackRide";
+        local userdata_14 = game:GetService("Players")[value];
         local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
+        Target:FireServer(string_14, userdata_14);
         end
     end
 end
@@ -70,16 +70,7 @@ end
 Loop.Button({
     Text = "Stop Loop Get on Back",
     Callback = function(value)
-        getgenv().back = false
-
-while wait() do
-    if getgenv().back == true then
-        local string_1 = "BothWantPiggyBackRide";
-        local userdata_1 = game:GetService("Players")[value];
-        local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
-        end
-    end
+    getgenv().back = false
 end
 })
 
@@ -87,13 +78,12 @@ Loop.TextField({
     Text = "Loop Get in Arms",
     Callback = function(value)
         getgenv().arms = true
-
 while wait() do
     if getgenv().arms == true then
-        local string_1 = "BothWantCarryHurt";
-        local userdata_1 = game:GetService("Players")[value];
+        local string_15 = "BothWantCarryHurt";
+        local userdata_15 = game:GetService("Players")[value];
         local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
+        Target:FireServer(string_15, userdata_15);
         end
     end
 end
@@ -102,30 +92,21 @@ end
 Loop.Button({
     Text = "Stop Loop Get in Arms",
     Callback = function(value)
-        getgenv().arms = false
-
-while wait() do
-    if getgenv().arms == true then
-        local string_1 = "BothWantCarryHurt";
-        local userdata_1 = game:GetService("Players")[value];
-        local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
-        end
-    end
+    getgenv().arms = false
 end
 })
 
 Loop.TextField({
     Text = "Loop Get on Shoulders",
     Callback = function(value)
-        getgenv().arms = true
+        getgenv().shoulders = true
 
 while wait() do
-    if getgenv().arms == true then
-        local string_1 = "BothWantShoulders";
-        local userdata_1 = game:GetService("Players")[value];
+    if getgenv().shoulders == true then
+        local string_16 = "BothWantShoulders";
+        local userdata_16 = game:GetService("Players")[value];
         local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
+        Target:FireServer(string_16, userdata_16);
         end
     end
 end
@@ -134,15 +115,6 @@ end
 Loop.Button({
     Text = "Stop Loop Get on Shoulders",
     Callback = function(value)
-        getgenv().arms = false
-
-while wait() do
-    if getgenv().arms == true then
-        local string_1 = "BothWantShoulders";
-        local userdata_1 = game:GetService("Players")[value];
-        local Target = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent;
-        Target:FireServer(string_1, userdata_1);
-        end
-    end
+    getgenv().shoulders = false
 end
 })
