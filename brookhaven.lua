@@ -1,4 +1,4 @@
---as it stands this is broken and not workign unless you have two people
+--as it stands this is broken and not working unless you have two people
 --there is also the problem of me using locals when i was inexperienced
 --and didnt make it a normal fireserver. Anywasys how to use with 2 ppl
 --do the script thingy to glitch in one persons arms, shoulders or whatever
