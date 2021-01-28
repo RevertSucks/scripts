@@ -1,3 +1,11 @@
+--as it stands this is broken and not workign unless you have two people
+--there is also the problem of me using locals when i was inexperienced
+--and didnt make it a normal fireserver. Anywasys how to use with 2 ppl
+--do the script thingy to glitch in one persons arms, shoulders or whatever
+--then get your friend to request a piggyback ride (or anything else)
+--to you. it should then work
+
+
 
 --[[
 AztupBrew(Fork of IronBrew2): obfuscation; Version 2.7.2
