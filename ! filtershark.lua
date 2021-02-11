@@ -1,7 +1,7 @@
 --[[
+	this likes to lag you alot btw
 	to add a custom theme on launch save the script and add a local with it being your theme should look like this:
 	local CUSTOM_THEME = [[{"BValue":{"Text":"Brightness: 41"},"TValue":{"Text":"Transparency: 0"},"ImageId":{"Text":"2576395708"},"Brightness":{"CanvasPosition":[1869.680908203125,0]},"WaterTrans":{"CanvasPosition":[1957.4468994140625,0]},"WTValue":{"Text":"Watermark Transparency: 0.62"},"ColorValue":{"Text":"255,0,255"},"Trans":{"CanvasPosition":[0,0]},"BG":{"ImageTransparency":0,"BackgroundTransparency":1,"Image":"http://www.roblox.com/asset/?id=2576395700","ImageColor3":[0.410000026226043701171875,0.410000026226043701171875,0.410000026226043701171875]},"WatermarkImage":{"ImageColor3":[1,0,1],"ImageTransparency":0.62000000476837158203125,"Visible":true}}]]
-	:) also this likes to lag me a lot so yeah
 ]]--
 
 local R2Sv3 = Instance.new("ScreenGui")
