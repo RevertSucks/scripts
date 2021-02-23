@@ -55,7 +55,7 @@ game:GetService('RunService').Heartbeat:connect(function()
 end)
 
 king = false
-b:Toggle("Zombie Ghost",function(bool)
+b:Toggle("King Ghost",function(bool)
    king = bool
 end)
 
