@@ -5,7 +5,7 @@ if id == 2636441885 then
 _G.ToggleColor = Color3.fromRGB(255,0,0)
 _G.ButtonColor = Color3.fromRGB(0,255,0)
 _G.SliderColor = Color3.fromRGB(0,0,255)
-local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))() -- It's obfuscated, I won't let you see my ugly coding skills. =)
+local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
 local w = library:CreateWindow("Speed City")
 local b = w:CreateFolder("Auto Farms")
 local msg = Instance.new("Message", Workspace)
@@ -28,7 +28,7 @@ end)
 
 game:GetService('RunService').Heartbeat:connect(function()
     if white == true then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.GhostCity.GhostOrbsMega.GhostMega.Core.CFrame wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.GhostCity.GhostOrbsMega.GhostMega.Core.CFrame
     end
 end)
 
@@ -50,7 +50,18 @@ end)
 
 game:GetService('RunService').Heartbeat:connect(function()
     if happy == true then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.GhostCity.GhostOrbsMega.Happy.Crate.CFrame wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.GhostCity.GhostOrbsMega.Happy.Crate.CFrame
+    end
+end)
+
+king = false
+b:Toggle("Zombie Ghost",function(bool)
+   king = bool
+end)
+
+game:GetService('RunService').Heartbeat:connect(function()
+    if king == true then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.GhostCity.GhostOrbsMega["King Ghost"].Crate.CFrame
     end
 end)
 
