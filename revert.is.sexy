@@ -8,6 +8,7 @@ _G.SliderColor = Color3.fromRGB(0,0,255)
 local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
 local w = library:CreateWindow("Speed City")
 local b = w:CreateFolder("Auto Farms")
+local c = w:CreateFolder("Teleports")
 local msg = Instance.new("Message", Workspace)
 
 black = false
@@ -74,6 +75,18 @@ game:GetService('RunService').Heartbeat:connect(function()
     if zombie == true then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.GhostCity.GhostOrbsMega["Zombie Ghost"].Crate.CFrame wait(1)
     end
+end)
+
+c:Button("Inf Road",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22,1550,-1993)
+end)
+
+c:Button("Beach",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3623,67,1083)
+end)
+
+c:Button("Ghost City",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3841,-33,7267)
 end)
 
 msg.Text = "Only Farms Ghost, Giant Orbs And Chest Because Everything Else is Detected"
