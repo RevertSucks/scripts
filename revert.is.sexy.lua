@@ -148,9 +148,32 @@ else
     msg:Destroy()
 print("Scythe Simulator", loaded)
 else
+    if id == 6280522952 then
+    _G.ToggleColor = Color3.fromRGB(255,0,0)
+    _G.ButtonColor = Color3.fromRGB(0,255,0)
+    _G.SliderColor = Color3.fromRGB(0,0,255)
+    local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
+    local w = library:CreateWindow("Pet Clicks Simulator")
+    local b = w:CreateFolder("Auto Farms")
+
+    click = false
+    b:Toggle("Click",function(bool)
+        click = bool
+    end)
+        
+    game:GetService('RunService').Heartbeat:connect(function()
+        if click == true then
+            game:GetService("Workspace").Events.AddClick:FireServer()
+        end
+    end)
+
+    b:Button("Gems",function()
+        game:GetService("ReplicatedStorage").ClicksGiver:FireServer(999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
+    end)
     local msg = Instance.new("Message", Workspace)
     msg.Text = "Invalid Game Retard - If Your in A Valid Game Contact {Clan Tag} Name#0202"
     wait(3)
     msg:Destroy()
+end
 end
 end
