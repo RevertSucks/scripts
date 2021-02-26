@@ -155,6 +155,7 @@ else
     local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
     local w = library:CreateWindow("Pet Clicks Simulator")
     local b = w:CreateFolder("Auto Farms")
+    local msg = Instance.new("Message", Workspace)
 
     click = false
     b:Toggle("Click",function(bool)
@@ -167,9 +168,28 @@ else
         end
     end)
 
+    egg = false
+    b:Toggle("Egg",function(bool)
+        egg = bool
+    end)
+        
+    game:GetService('RunService').Heartbeat:connect(function()
+        if egg == true then
+            game:GetService("ReplicatedStorage").RemoteEvents.EggOpened:InvokeServer("IGWW","Single")
+            wait()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1015,1025,-399)
+        end
+    end)
+
     b:Button("Gems",function()
         game:GetService("ReplicatedStorage").ClicksGiver:FireServer(999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
     end)
+    print("Pet Clicks Simulator", loaded)
+    msg.Text = "Only Use Egg After Gems"
+    wait(3)
+    msg:Destroy()
+
+else
     local msg = Instance.new("Message", Workspace)
     msg.Text = "Invalid Game Retard - If Your in A Valid Game Contact {Clan Tag} Name#0202"
     wait(3)
