@@ -188,12 +188,33 @@ else
     msg.Text = "Only Use Egg After Gems"
     wait(3)
     msg:Destroy()
-
+else
+    if id == 5751925035 then
+        _G.ToggleColor = Color3.fromRGB(255,0,0)
+        _G.ButtonColor = Color3.fromRGB(0,255,0)
+        _G.SliderColor = Color3.fromRGB(0,0,255)
+        local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
+        local w = library:CreateWindow("BloxRP")
+        local b = w:CreateFolder("Things")
+        local msg = Instance.new("Message", Workspace)
+        
+        staminahack = false
+        b:Toggle("Inf Stamina",function(bool)
+            staminahack = bool
+        end)
+                
+        game:GetService('RunService').Heartbeat:connect(function()
+            if staminahack == true then
+                game.Players.Stamina.Value = 2
+            end
+        end)
+print("BloxRP",loaded)
 else
     local msg = Instance.new("Message", Workspace)
     msg.Text = "Invalid Game Retard - If Your in A Valid Game Contact {Clan Tag} Name#0202"
     wait(3)
     msg:Destroy()
+end
 end
 end
 end
