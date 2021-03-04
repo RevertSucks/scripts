@@ -1,0 +1,36 @@
+--[[
+     Features & Things im working (or going to work on) For https://raw.githubusercontent.com/RevertSucks/scripts/master/revert.is.sexy.lua
+]]--
+
+--[[
+     Feature List
+]]--
+-- Speed City (2636441885)
+[.] - Farm Black Orbs
+[.] - Farm White Orbs
+[.] - Farm Rainbow Orbs
+[.] - Farm Happy Ghost
+[.] - Farm King Ghost
+[.] - Farm Zombie Ghost
+[.] - Teleport to Infinite Road
+[.] - Teleport to Beach
+[.] - Teleport to Ghost City
+-- Scythe Simulator (5546188609)
+[.] - Farm Clicks
+[.] - Farm Clicks - Max Boost
+[.] - Farm Coins
+-- BloxRP (5751925035)
+[.] - Infinite Stamina
+[.] - Swing Fist Faster (swing at the speed of light)
+-- Global
+[.] - Fullbright
+[.] - InfJump
+
+--[[
+     WIP
+]]--
+-- Global
+[.] - Update UI
+[.] - Readd Jumppower and Walkspeed Globals I Accidentally Deleted
+-- Speed City (2636441885)
+[.] - Add shity ghost farm (need a ghost trail to farm black and white orbs)
