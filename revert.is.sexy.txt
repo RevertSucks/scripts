@@ -34,3 +34,9 @@
 [.] - Readd Jumppower and Walkspeed Globals I Accidentally Deleted
 -- Speed City (2636441885)
 [.] - Add shity ghost farm (need a ghost trail to farm black and white orbs)
+
+--[[
+     Credits
+]]--
+[.] - Me ( {Clan Tag} Name#0202 )
+[.] - Current UI ( https://v3rmillion.net/showthread.php?tid=979334 ) - this is going to change soon.
