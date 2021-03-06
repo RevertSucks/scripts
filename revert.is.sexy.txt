@@ -25,14 +25,12 @@
 -- Global
 [.] - Fullbright
 [.] - InfJump
+[.] - Walkspeed and Jumppower changer (16-500)
 
 --[[
      WIP
 ]]--
--- Global
-[.] - Readd Jumppower and Walkspeed Globals I Accidentally Deleted (currently works in games without a script made for them)
--- Speed City (2636441885)
-[.] - Add shity ghost farm (need a ghost trail to farm black and white orbs)
+-- Nothing :)
 
 --[[
      Credits
