@@ -1,28 +1,4 @@
-local global = library:CreateWindow("Global")
-local globalwin = global:CreateFolder("Things")
-
-globalwin:Button("Fullbright",function()
-    game:GetService("Lighting").Brightness = 2
-    game:GetService("Lighting").ClockTime = 14
-    game:GetService("Lighting").FogEnd = 100000
-    game:GetService("Lighting").GlobalShadows = false
-    game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
-end)
-
-infjump = false
-globalwin:Toggle("InfJump",function(bool)
-    infjump = bool
-end)  
-game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(Key)
-    if infjump == true and Key == " " then
-        game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(3)
-    end
-end)
-
-globalwin:Slider("Walkspeed",16,500,false,function(value)
-    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
-end)
-
-globalwin:Slider("Jumppower",16,500,false,function(value)
-    game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = value
-end)
+--[[
+    Disabled due to a bug of it overiding the game
+]]--
+print("hi thanks for checking, globals are currently down due to some problems of locals not working correctly, im going to attempt to fix this later. Thanks for your patience - ReverT")
