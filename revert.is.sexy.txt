@@ -26,6 +26,7 @@
 [.] - Fullbright
 [.] - InfJump
 [.] - Walkspeed and Jumppower changer (16-500)
+[.] - NOTIC GLOBALS FOR GAMES ARE DOWN DUE TO A BUG - THESE ONLY WORK GAMES THAT I HAVE NOT WORKED ON. SORRY.
 
 --[[
      WIP
